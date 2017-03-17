@@ -52,19 +52,13 @@
 										<h3>Objective</h3>
 									</header>
 									<p>
-										Process-oriented information systems are software systems that execute and manage a process, broadly defined as a coordinated execution of actions to achieve a certain goal. As such, they support Business Process Management (BPM) initiatives. Process-oriented systems have been traditionally used in domains such as business process automation, enterprise application integration, and collaborative work. Recently, there has also been a significant uptake of process-oriented information systems in transportation, logistics, and medical infrastructures -- domains that impose new challenges in terms of system reactivity and adaptability. Here, trends such as sensing of data (e.g., based on RFID technology) and advancing system integration (driven by technical standards such as EPCglobal) represent opportunities to strengthen the event-perspective in process-oriented systems in order to achieve more flexible and comprehensive process control.
+										Processes are defined as collections of related tasks intended to achieve a certain goal. Process-oriented systems are then capable of executing and managing such processes, and are widely employed in domains such as Business Process Management (BPM), enterprise application integration, and collaborative works. More recently, there has been considerable interest in leveraging process management in the context of emerging topics linked to Internet of Things: transportation, logistics, and medical services. These domains impose new requirements in terms of reactivity and adaptability with respect to process execution. This includes integration with data sensing technologies (e.g., RFID) and system integration (e.g., EPCglobal). To meet these challenges, there is a need to consider events, generated from application-specific sensors, as a first class citizens within the management of processes in order to meet the desired process flexibility.
 									</p>
 									<p>
-										Event-based systems, in turn, have been put forward to integrate heterogeneous systems in a flexible and scalable manner by separating communication from application logic. These systems provide interaction models, mechanisms for routing events between components, and techniques for the detection of composite events, i.e., for Complex Event Processing (CEP). Although event-based systems are typically positioned as general-purpose technology, they have found their way into many applications where event generation is comparatively deterministic and follows structured behaviour. In domains such as transportation, logistics, and the medical sector, events handled by event-based systems stem from the execution of processes, which are partially supported by process-oriented information systems. Exploiting the process-perspective, therefore, promises to lead to advancements in the design, analysis, and optimisation of event-based systems.
+										On the other hand, event-based systems are geared towards the integration of heterogeneous systems by emphasizing on core decoupling properties. Due to the temporal nature of events, event-based systems are naturally geared towards flexibility and reactivity. These systems are capable of both disseminating data, i.e., event messaging, and processing patterns in streams of events, i.e., Complex Event Processing (CEP). However, event-based systems lack the capability to reason about end-to-end workflows or higher level structures, which are increasingly required in domains such as transportation, logistics, and medical services. This gap can therefore be addressed by injecting process management into the system.
 									</p>
 									<p>
-										The increasing overlap of application scenarios that involve concepts and techniques of process-oriented as well as event-based systems, however, is only marginally supported by exchange and convergence of the related research fields. Strong communities have been established for research on either type of system. Yet, due to the missing link between these communities, manifold opportunities for ground-breaking research and broad impact in industry are missed out. Research efforts related to the underlying theory as well as specific platforms are duplicated and similar approaches are developed in both communities.
-									</p>
-									<p>
-										Breaking this disconnect had been the goal that the workshop aims to achieve by identifying the links between conceptual models, formal analysis methods, and engineering techniques developed for either type of system. 									
-									</p>
-									<p>
-										This workshop is a follow-up to the successful Dagstuhl Seminar held in 2016: (<a href="http://www.dagstuhl.de/de/programm/kalender/semhp/?semnr=16341">link</a>)
+										Due to the increasing overlap of application scenarios between the two types of systems, we seek to identify opportunities for ground-breaking research and impact in industry by integrating the two technologies together. This workshop is a follow-up to the successful Dagstuhl Seminar held in 2016: (<a href="http://www.dagstuhl.de/de/programm/kalender/semhp/?semnr=16341">page</a> | <a href="http://drops.dagstuhl.de/opus/volltexte/2017/6910/pdf/dagrep_v006_i008_p021_s16341.pdf">report</a>)
 									</p>
 								</section>
 								<section id="topics">
@@ -72,10 +66,16 @@
 										<h3>Topics</h3>
 									</header>
 									<p>
-										The workshop seeks to engage the community on the following topics:
+										Following the recommendations of the Dagstuhl report, the workshop seeks to engage the community on the following topics:
+									</p>
+									<p>
+										<b>Unified Representation for Events and Processes.</b> There is currently a disconnect between the two communities due to the lack of an unified standard which can be understood by all. An unified model which treats both events and processes as first class citizens must be developed. In addition, a relational algebra must be developed in order to query events and processes.
 									</p>
 									<p>
 										<b>Event Models for BPM: Semantics of Events and Patterns.</b> Starting from the observation that event models are well-established in both BPM and CEP and that their coupling has obvious benefits, the challenge relates to the question of how events can guide the evolution or adaptation of process instances.
+									</p>
+									<p>
+										<b>Event processing as a kernel to execute BPM.</b> Works exist which successfully translated BPM languages (e.g., BPEL and GSM) into an event processing language, and execute the models using an event processing system. Further opportunities, drawbacks, and advantages of such approaches must be investigated in more detail.
 									</p>
 									<p>
 										<b>Towards Automatic Event-Based Monitoring of Processes.</b> Event-based monitoring of processes is influenced by the availability of patterns, the consequences of monitoring results, and the integration of contextual information. These dimensions render it particularly challenging to comprehensively discover and utilise patterns for process monitoring.
@@ -96,13 +96,15 @@
 										<b>Integrated Platforms for BPM & CEP.</b> The integration of traditional BPM or CEP engines promises accelerated application development and lower maintenance cost. To attain this end, the challenge of developing a unified model for events and processes, enabling well-grounded architectural decisions, needs to be addressed.
 									</p>
 									<p>
-										<b>(Highly) Distributed Processes & The Role of Events.</b> Events and processes can both be handled in a centralised or distributed infrastructure and open challenges relate to the tradeoffs regarding trustworthiness, reliability, and scalability.
+										<b>(Highly) Distributed Processes & The Role of Events.</b> Events and processes can both be handled in a centralised or distributed infrastructure and open challenges relate to the tradeoffs regarding trustworthiness, reliability, and scalability. Traditional database concerns over replication and consistency (i.e., the CAP theorem) can be revisited in this context.
 									</p>
 									<p>
-										<b>Event Data Quality.</b> Event data may be uncertain, which needs to be reflected in processes that are influenced by these events. The challenge is how to capture such uncertainty and make explicit how it influences decision making on the level of the process.
+										<b>Event Data Quality.</b> Event data may be unreliable, fuzzy, or incomplete, which needs to be reflected in processes that are influenced by these events. The challenge is how to capture such uncertainty and make explicit how it influences decision making on the level of the process.
 									</p>
 									<p>
 										<b>From Event Streams to Process Models and Back.</b> Event patterns and processes are typically concerned with events on different levels of abstractions, which can be bridged only on the basis of a unifying formal model. Further challenges arise from the imprecision of event definitions in processes and the expressiveness of CEP languages when capturing procedural behaviour.
+									</p>
+										<b>Hardware Acceleration and Virtualization for EP & BPM.</b> Identify opportunities to leverage hardware acceleration and virtualization technologies in the context of achieving high-speed EP & BPM.
 									</p>
 									<p>
 										<b>Compliance, Audit, Privacy and Security.</b> Compliance checking of business processes may benefit from CEP systems and BPM tools may be useful to express service level agreements in event-based systems. Challenges, however, are methods for a structured integration of BPM and CEP technology and their alignment with informal compliance requirements.
@@ -113,7 +115,7 @@
 										<h3>Structure</h3>
 									</header>
 									<p>
-										The program will consist of invited talks which will describe the state-of-the-art in both domains, as well as identify research challenges concerning their integration. These talks will kick off a series of discussion rounds centered around specific topics where the community will plan research initiatives.
+										The program will consist of invited talks (1h each) which will describe the state-of-the-art in both domains, as well as identify research challenges concerning their integration. These talks will kick off a series of discussion rounds centered around specific topics where the community will plan research initiatives.
 									</p>
 								</section>
 								<section id="organisation">
