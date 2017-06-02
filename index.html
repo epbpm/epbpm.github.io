@@ -112,13 +112,67 @@
 								</section>
 								<section id="structure">
 									<header>
-										<h3>Structure</h3>
+										<h3>Program</h3>
 									</header>
-									<p>
-										The program will consist of invited talks (1h sessions) which will describe the state-of-the-art in both domains, as well as identify research challenges concerning their integration. These talks will kick off a series of discussion rounds centered around specific topics where the community will plan research initiatives.
+									<p>9:00-10:30: Session 1
+									</p>
+									<p>Gulisano, Vincenzo. <strong>"Streaming Analytics in Fog Architectures"</strong>
+									</p>
+									<p>Abstract: With its “first the query, then the data” philosophy, data streaming has gained popularity over traditional “first the data, then the query” store-then-process approaches. By defining continuous queries are graphs of operators that can be executed in a distributed and parallel fashion, it enables for high-throughput and low-latency continuous analysis of unbounded sources of data. Data streaming can be particularly helpful in the processing and analysis of the massive amounts of data found in Fog architectures (distributed and heterogeneous networks of sensing and computing devices) such as smart grids or vehicular networks. In this talk, we will introduce Fog architectures and discuss their underlying challenges from the data analysis perspective. Among others, we will focus on the need for “close-to-the-source”, deterministic, efficient and privacy-preserving data analysis and discuss how the data streaming processing paradigm can address these challenges.
+									</p>
+									<p>Bio: Vincenzo Gulisano (Ph.D.) is an assistant professor at Chalmers University of Technology (Distributed Computing and Systems – DCS – research group) investigating design, implementation and scalability challenges in Big Data online analysis, with particular focus on cyber-physical systems and their security and privacy dimensions. Before joining Chalmers University of Technology, he worked on parallelism, elasticity and fault tolerance for stream processing engines at the Polytechnic University of Madrid, with the Distributed Systems Lab. More information is available at <a href="https://vincenzogulisano.com/">https://vincenzogulisano.com/</a>.
+									</p>
+
+									<p>Artikis, Alexander. <strong>"Machine Learning for Complex Event Recognition</strong>
+									</p>
+									<p>Abstract: Systems for complex event recognition accept as input a stream of time-stamped events from sensors and other computational devices, and seek to identify high-level composite (complex) events, collections of events that satisfy some pattern. The manual construction of complex event patterns is tedious, time-consuming and error-prone process. Consequently, methods automating the process of pattern construction are highly desirable. In this talk, we will give a brief overview of supervised machine learning techniques for complex event recognition. Then, we will present OSLα and OLED, two recently proposed online learners operating on data streams lacking veracity, for complex event pattern construction and refinement. OSLα is a Markov Logic Network learner exploiting a given background knowledge to constrain the space of possible structures. OLED is based on adductive-inductive logic programming, and uses the Hoeffding bound for efficient and scalable learning. Empirical evaluation on real and benchmark datasets has shown that both OSLα and OLED match the performance of hand-crafted complex event patterns. 
+									</p>
+									<p>Bio: Alexander Artikis is an Assistant Professor in the University of Piraeus, and a Research Associate in the Institute of Informatics & Telecommunications at NCSR Demokritos, in Athens, Greece, where he leads the Complex Event Recognition lab (<a href="http://cer.iit.demokritos.gr/">http://cer.iit.demokritos.gr/</a>). Alexander holds a PhD from Imperial College London on the topic of multi-agent systems, while his research interests lie in the areas of artificial intelligence and distributed systems. He has published over 70 papers in related journals, such as Artificial Intelligence, Machine Learning, the ACM Transactions on Autonomous and Adaptive Systems, the ACM Transactions on Computational Logic, the ACM Transactions on Intelligent Systems and Technology and the IEEE Transactions on Knowledge and Data Engineering, as well as highly competitive conferences, including DEBS, ECML, AAMAS and ECAI. He has been working on several EU-funded projects on event processing, being the scientific coordinator in some of them.  Alexander has been serving as a member of the programme committees of several international conferences, including IJCAI, DEBS, CIKM, ECAI, AAMAS and AAAI.
+									</p>
+									
+									<p>Mandal, Sankalita. <strong>"Events in Business Process Implementation: From Expressive Models to Analysis Opportunities"</strong>
+									</p>
+									<p>Abstract: Business process management enables organizations to model, execute, monitor and improve their processes. The digital age gives the opportunity to enrich business processes with environmental occurrences represented as events. Event handling enables the specification of how a process communicates with its environment and how this environment influences the execution of process. In spite of having rich expressive languages like BPMN, common event handling semantics are ambiguous and limited. They largely neglect the design choices to be made while deciding on when to subscribe to event sources and how to retrieve events for a particular process instance. In this talk, an event handling model is presented that enables explicit subscriptions and event buffering from a business process perspective. Further, it is discussed how existing techniques for verification and adapter synthesis using formal execution semantics can be leveraged to analyze the interactions of a business process. The talk desires to trigger discussions around the requirements for such an adapter synthesis and the possible application scenarios. 
+									</p>
+									<p>Bio: Sankalita is a PhD student in the Business Process Technology Group at Hasso Plattner Institute, Potsdam since March 2015. After completing her Bachelor studies from Kolkata, India, she came to Germany for pursuing Masters in Computer Science from Technical University of Kaiserslautern. Her current area of research is exploring the benefits and the challenges of integrating external events into business processes. She has been associated with different projects that focused on the communication between event sources and business processes in various domains such as logistics or agriculture.
+									</p>
+									
+									<p>10:30-11:00: Coffee Break
+									</p>
+									
+									<p>11:00-12:30: Session 2</p>
+									
+									<p>Vitenberg, Roman. <strong>"Two Use Cases for Pub/Sub in Business Processes: Social Interaction at Spotify and Asynchronous Blockchains"</strong>
+									</p>
+									<p>Abstract: TBA
+									</p>
+									<p>Bio: Roman Vitenberg is a Professor at the Department of Informatics
+at the University of Oslo. He received his PhD in Computer Science 
+from the Technion - Israel Institute of Technology. In the past, he 
+was a visiting researcher at the University of California at 
+Santa-Barbara, Universita di Roma La Sapienza, and Universidad 
+Politecnica de Madrid. He also spent three years as a research staff 
+member at IBM Research where he contributed to the design of the 
+high-availability component of WebSphere.
+
+His research interests lie broadly in the area of distributed applications, 
+middleware and algorithms; including specification, design, analysis, 
+implementation, performance evaluation, and software engineering.
+In particular, he has been working on large-scale communication, 
+object-oriented and component-based platforms, distributed event-based 
+systems, consistency models, and fault-tolerant distributed computing.
+He is recipient of best paper awards at ACM/IFIP/USENIX Middleware,
+ACM SAC, and ACM DEBS conferences.
+									</p>	
+									
+									<p>Souleiman, Hasan, and Curry, Edward. <strong>"Data Representation and Loose Coupling for Events and Processes"</strong>
+									</p>
+									<p>Abstract: Modern information systems produce and consume data at unprecedented volumes, variety, and velocity. Events are essentially data items which convey messages between decoupled systems. Processes are arrangements of activities which consume data inputs and produce data outputs in the context of a computerized system. Scaling event systems and process-management systems to environments such as smart cities and the Internet of Things implies a principled handling of data representation at both semantics and contextual dimensions. We discuss data representation techniques inspired from data analytics vector and tensor representations, and thingsonomy, the IoT taxonomy, inspired from tagging in social web. We show how such data representations,  along with semantic matching and uncertainty management, could lay the ground for large-scale loosely-coupled management of event-based systems and process-management systems alike.
+									</p>
+									<p>Bio: Dr. Souleiman Hasan (<a href="http://www.souleimanhasan.org">www.souleimanhasan.org</a>) is an adjunct lecturer and postdoctoral researcher at LERO The Irish Software Research Centre (www.lero.ie) at the National University of Ireland, Galway. He leads the Big Data Processing Architectures special group at the Big Data Value Association (www.BDVA.eu), a non-profit European industry-led organisation for data-driven innovation.  Souleiman investigates the data coupling and scalability problem of distributed event processing systems within heterogeneous environments, such as the Internet of Things, using advanced data analytics techniques for data representation.
 									</p>
 									<p>
-										Abstracts for invited talks will be published as part of the DEBS proceedings. Please submit your talk information (title, abstract, biography) before the camera deadline, <b>May 19th, 2017</b>.
+Dr. Edward Curry (<a href="http://www.edwardcurry.org">www.edwardcurry.org</a>) is a research leader at the Insight Centre for Data Analytics (<a href="http://www.insight-centre.org">www.insight-centre.org</a>) and a funded investigator at LERO The Irish Software Research Centre (<a href="http://www.lero.ie">www.lero.ie</a>).  His research projects include studies of distributed systems, event-based systems, semantic information management, open data, crowdsourcing, and smart cities (including water and energy). He is the Vice President of the Big Data Value Association (<a href="http://www.BDVA.eu">www.BDVA.eu</a>) a non-profit industry-led organisation with the objective of increasing the competitiveness of European Companies with data-driven innovation. 
 									</p>
 								</section>
 								<section id="organisation">
